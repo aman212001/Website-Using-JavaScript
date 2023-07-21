@@ -1,3 +1,4 @@
+/* Navbar CSS */
 .navbar{
     padding: 0;
     margin: 0;
@@ -106,4 +107,18 @@ a.active,a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+}
+
+/*Heading*/
+#heading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 27px;
+    padding-left: 50%;
+    line-height: 100px;
+}
+
+#heading1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 27px;
+    padding-left: 50%;
 }

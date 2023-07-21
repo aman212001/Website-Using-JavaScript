@@ -5,8 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechSpark</title>
+    <!--Swiper JS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .swiper-section{
+            width: 100%;
+            height: 55vh;  /*100vh*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper{
+            width: calc(100% - 20%);
+            height: calc(100vh - 4rem); /*20rem*/
+            border-radius: 8px;
+        }
+        .swiper-slide > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .swiper-slide{
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .pagination_{
+            position: absolute;
+            width: calc(100% - 10%);
+        }
+        .pagination_ div[class^="swiper-button"]::after {
+            display: none;
+        }
+        .pagination_ div[class^="swiper-button"] {
+            width: 45px;
+            height: 45px;
+            border: 1px solid rgb(75,75,75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        .pagination_ div[class^="swiper-button"] img{
+            width: 60%;
+        }
+        .swiper-pagination-bullet-active{
+            width: 20px;
+            border-radius: 4px;
+            background: rgba(200, 200, 200, 0.8);
+        }
+    </style>
+
     <!--CSS External Link-->
     <link rel="stylesheet" href="assests/CSS/style.css">
+
+    <!--Javascript External-->
+    <script src="assests/JS/script.js"></script>
+
     <!--Font Awesome Icon List-->
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,5 +89,59 @@
         </ul>
     </nav>
 
+<!--Heading-->
+<label id="heading">Our Vision</label>
+<!-- Swiper -->
+<section class="swiper-section">
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="assests/Images/img 1.png"></div>
+        <div class="swiper-slide"><img src="assests/Images/img 2.png"></div>
+        <div class="swiper-slide"><img src="assests/Images/img 3.png"></div>
+        <div class="swiper-slide"><img src="assests/Images/img 4.png"></div>
+        <div class="swiper-slide"><img src="assests/Images/img 5.png"></div>
+        <div class="swiper-slide"><img src="assests/Images/img 6.png"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        
+    
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    <div class="pagination_">
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"><img src="assests/Images/icons/back.svg"></div>
+        <div class="swiper-button-next"><img src="assests/Images/icons/next.svg"></div>
+
+    </div>
+</section>
+
+
+<!--Swiper JS Javascript-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  speed: 400,
+  spaceBetween: 10,
+  slidesPerView: 2,    //3
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable:true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+</script>
+<br>
+<label id="heading1">Our Courses</label>
+<br>
 </body>
 </html>
