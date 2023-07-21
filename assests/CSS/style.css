@@ -113,12 +113,18 @@ a.active,a:hover{
 #heading{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 27px;
-    padding-left: 50%;
+    padding-left: 590px;
+    text-align: center;
     line-height: 100px;
+}
+
+.swiper-section{
+    height: 500px;
+    width: 100%;
 }
 
 #heading1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 27px;
-    padding-left: 50%;
+    padding-left: 580px;
 }
