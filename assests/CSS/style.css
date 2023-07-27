@@ -512,3 +512,64 @@ a.active,a:hover{
     background: var(--primary-color);
 }
 
+
+/* Footer */
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+    color: #d9d9d9;
+}
+
+.main-content{
+    display: flex;
+}
+
+.box1{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box1 h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: var(--primary-color);
+}
+
+.box1 content{
+    margin: 20px 0 0 0;
+}
+
+.left-box .content p{
+    text-align: justify;
+}
+
+.left-box .content .socials{
+    margin: 20px 0 0 0;
+}
+
+.left-box .content .socials a{
+    padding: 0 2px;
+    
+}
+
+.left-box .content .socials a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left-box .content .socials a span:hover{
+    background: var(--primary-color);
+}
+
+
