@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    scroll-behavior: smooth;
+}
 /* Navbar CSS */
 .navbar{
     padding: 0;
@@ -572,4 +576,22 @@ footer{
     background: var(--primary-color);
 }
 
+/* Scroll to Top */
+.scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #fd562a;
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.scrollTop:hover{
+    background-color: #777;
+    color: black;
+}
 
