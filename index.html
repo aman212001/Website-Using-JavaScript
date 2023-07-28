@@ -66,6 +66,8 @@
 
     <!--CSS External Link-->
     <link rel="stylesheet" href="assests/CSS/style.css">
+    <link rel="stylesheet" href="Chatbot Assest/CSS/chat.css">
+    <link rel="stylesheet" href="Chatbot Assest/CSS/home.css">
 
     <!--Javascript External-->
     <script src="assests/JS/script.js"></script>
@@ -85,10 +87,10 @@
         <label class="logo navbar">TechSpark</label>
         <ul class='navbar navele'>
             <li class="liele"><a href="#" class="listElement active">Home</a></li>
-            <li class="liele"><a href="#" class="listElement">About</a></li>
-            <li class="liele"><a href="#" class="listElement">Services</a></li>
-            <li class="liele"><a href="#" class="listElement">Contact</a></li>
-            <li class="liele"><a href="#" class="listElement">Feedback</a></li>
+            <li class="liele"><a href="#about" class="listElement">About</a></li>
+            <li class="liele"><a href="#services" class="listElement">Services</a></li>
+            <li class="liele"><a href="#courses" class="listElement">Courses</a></li>
+            <li class="liele"><a href="#feedback" class="listElement">Feedback</a></li>
         </ul>
     </nav>
 
@@ -148,7 +150,7 @@
 <label id="heading1">Our Courses</label>
 <!--Our Courses Tiles-->
 <br><br><br>
-<div class="container">
+<div class="container" id="courses">
     <div class="box-container">
         <div class="box">
             <img src="assests/Images/html.png">
@@ -200,7 +202,7 @@
 <br>
 
 <!--About US Tiles-->
-<div class="container1">
+<div class="container1" id="services">
     <div id="service-section">
         <h2 class="service-section-h2">Service</h2>
         <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio quo asperiores incidunt animi nostrum ipsum minus recusandae? Sequi, dolores?</p>
@@ -260,7 +262,7 @@
     </div>
 </section>
 <br><br>
-<div class="image-form">
+<div class="image-form" id="feedback">
     <div class="form-image">
         <img src="assests/Images/form.png" alt="form image" class="form-cover">
     </div>
@@ -277,7 +279,7 @@
     </div>
 </div>
 <!-- Footer -->
-<footer>
+<footer id="about">
     <div class="main-content">
         <div class="left-box box1">
             <h2>About us</h2><br>
@@ -318,7 +320,7 @@
                     <div class="email">
                         <div class="text">Email <span style="color: red;">*</span></div>
                         <input type="email" required>
-                    </div><br>
+                    </div>
                     <div class="msg">
                         <div class="text">Message <span style="color: red;">*</span></div>
                         <textarea rows="2" cols="25" required></textarea>
@@ -334,5 +336,50 @@
 
 <!--Back to Top button-->
 <div onclick="scrollToTop()" class="scrollTop">Top</div>
+
+<!--Chatbot-->
+<!--Chat Bar Block-->
+<div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+
+    <div class="content2">
+        <div class="full-chat-block">
+            <!--Message Container-->
+            <div class="outer-container">
+                <div class="chat-container">
+                    <!--Messages-->
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+
+
+                    <!--User Input Box-->
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg1" placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+                        <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
+                        <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+<script src="Chatbot Assest/JS/chat.js"></script>
+<script src="Chatbot Assest/JS/responses.js"></script>
 </html>
